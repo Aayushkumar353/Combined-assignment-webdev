@@ -59,10 +59,103 @@ http://localhost:3000
 
 ---
 
+## Internal Structure (How to Build It)
+
+### Transaction Object
+
+```js
+{
+  from: "Alice",
+  to: "Bob",
+  amount: 100
+}
+```
+
+* Created from user input
+* Pushed to the **mempool** (array)
+
+---
+
+### Mempool
+
+```js
+let mempool = [];
+```
+
+* Stores all pending transactions
+* Cleared after mining a block
+
+---
+
+### Block Object
+
+```js
+{
+  index: 1,
+  timestamp: Date.now(),
+  transactions: [...],
+  prevHash: "abc123",
+  nonce: 0,
+  hash: "0000xyz..."
+}
+```
+
+---
+
+### Mining Logic (Core Idea)
+
+```js
+while (!hash.startsWith("0000")) {
+  nonce++;
+  hash = sha256(data + nonce);
+}
+```
+
+* Keep changing `nonce`
+* Until hash meets difficulty condition
+
+---
+
+### Blockchain
+
+```js
+let chain = [genesisBlock];
+```
+
+* Array of blocks
+* Each block links via `prevHash`
+
+---
+
+### Flow
+
+```
+Input → Transaction → Mempool → Mine → Block → Chain
+```
+
+
+---
+
 ## Extra Tasks
 
 * Easy: Limit max 5 transactions per block
 * Medium: Persist ledger to a JSON file
+
+---
+
+## Note
+
+This is a **simple Web2 application** built with Node.js and basic JavaScript.
+
+You **don’t need any Web3 or blockchain experience** to build this.
+
+* Everything runs locally
+* No wallets, no networks, no crypto setup
+* Just objects, arrays, and logic
+
+The required structures (transactions, blocks, chain) are already explained in the **Internal Structure** section—follow that and build step by step.
+
+If you’re curious, you can later explore how these concepts apply to real blockchains—but that’s optional.
 
 ---
 
