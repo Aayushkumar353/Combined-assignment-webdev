@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+.topbar{
+    flex: 1;
+    background-color: rgb(0, 0, 0);
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: white;
+    display: flex;
+}
+.bottombar{
+    flex: 3;
+    display: flex;
+    background-color: black;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 4rem;
+}
+
+.left{
+    color: white;
+    flex: 3;
+}
+
+.left h1{
+    font-size: x-large;
+    font-weight: bolder;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.right{
+    flex: 7;
+    display: flex;
+    color: white;
+    padding-top: 1rem;
+}
+.column{
+    flex: 1;
+}
+.item {
+    display: flex;
+    align-items: center;
+}
+.item img {
+    width: 40px;
+    height: 40px;
+}
+.Lbar{
+    display: flex;
+    gap: 2rem;
+    flex: 3;
+}
+.Rbar{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.tbItem{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.tbItem img{
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+.Rbar img:hover{
+    background-color: rgba(255, 255, 255, 0.1); /* soft highlight */
+    cursor: pointer;
+}
+.tbItem h1{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.buttontb a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttontb a:visited {
+    color: white; 
+}
+.bright{
+    width: 30px;
+    height: 30px;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    border: 1px solid #2a3441;
+    padding: 8px 12px;
+    border-radius: 6px;
+    width: 200px;
+}
+.search-box input{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    width: 100%; 
+}
+.Tbbutton{
+    background-color: #0078d4;
+    padding: 8px 12px;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    width: 8rem;
+    text-decoration: underline;
+    font-weight: bolder;
+    color: white ;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.Tbbutton:hover{
+    cursor: pointer;
+    background-color: #106ebe;
+    text-decoration: none;
+}
+.mainbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 6;
+    background-color: #0b0b0b;
+    color: white;
+    flex-direction: column;
+    padding-bottom: 2rem;   
+    gap: 1rem; 
+}
+.mainbar h1{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.secline{
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+.mbTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+.mbBottom{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex: 6;
+    flex-direction: column;
+    border: #0d1014 solid 0px;
+    background-color: #212121;
+    border-radius: 8px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.firstline{
+    font-size: 0.8rem;
+}
+.firstline a{
+    color: white;
+}
+.secondline{
+    font-size: 0.8rem;
+}
+.secondline a{
+    color: white;
+}
+.mbButton1{
+    background-color: #ffffff;
+    padding: 6px 28px;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white ;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.mbButton1 button img{
+    width: 40px;
+    height: 40px;
+}
+.mbButton1 button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: larger;
+}
+.mbButton1 button:hover{
+    cursor: pointer;
+}
+.mbButton1:hover{
+    background-color: #e0e0e0;
+    color: black;
+}
