@@ -21,11 +21,10 @@ body{
     flex: 3;
     display: flex;
     background-color: black;
-
     justify-content: center;
     align-items: center;
-
     gap: 4rem;
+    padding-left: 6rem;
 }
 
 .left{
